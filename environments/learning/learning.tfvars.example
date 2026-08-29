@@ -1,0 +1,15 @@
+# Cost-aware learning profile. Review docs/COST_AND_CLEANUP.md before applying.
+aws_region       = "us-east-1"
+nat_gateway_mode = "single"
+
+min_size         = 2
+desired_capacity = 2
+max_size         = 4
+
+enable_database      = false
+enable_observability = true
+
+additional_tags = {
+  Owner      = "jeevanm84"
+  CostCenter = "learning"
+}

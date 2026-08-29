@@ -1,0 +1,19 @@
+# Resilience-focused profile. This creates two NAT gateways and an optional
+# Multi-AZ RDS database and therefore costs materially more than the learning profile.
+aws_region       = "us-east-1"
+nat_gateway_mode = "per_az"
+
+min_size         = 2
+desired_capacity = 2
+max_size         = 6
+
+enable_database                 = true
+database_multi_az               = true
+database_deletion_protection    = true
+skip_database_final_snapshot    = false
+enable_observability            = true
+
+additional_tags = {
+  Owner      = "jeevanm84"
+  CostCenter = "learning"
+}

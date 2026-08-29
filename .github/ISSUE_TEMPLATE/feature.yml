@@ -1,0 +1,25 @@
+name: Learning improvement
+description: Suggest a lab, explanation, module, or safety improvement.
+title: "[Idea]: "
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Primary audience
+      options: [Beginner, Intermediate, Advanced, All levels]
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Learning problem
+      description: What should a learner understand or be able to do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+    validations:
+      required: true
