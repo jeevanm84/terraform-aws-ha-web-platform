@@ -3,7 +3,7 @@
 ## System view
 
 ```mermaid
-flowchart LR
+flowchart TB
   subgraph GitHub
     PR[Pull request] --> CI[Offline CI<br/>fmt · validate · mock tests]
     Manual[Manual workflow] --> OIDC[GitHub OIDC token]
