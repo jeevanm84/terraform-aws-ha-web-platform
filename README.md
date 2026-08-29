@@ -99,6 +99,20 @@ See [Code structure and execution flow](docs/CODE_STRUCTURE.md) for the dependen
 
 This is a learning reference, not a turnkey production platform. Before production use, add organization-specific DNS, WAF, KMS keys, centralized logging, policy-as-code, service control policies, backup/restore tests, disaster recovery targets, and a reviewed least-privilege IAM policy.
 
+## Portfolio roadmap
+
+This repository is the infrastructure-as-code stage of the [jeevanm84 engineering portfolio](https://github.com/jeevanm84):
+
+```text
+Git foundations → Terraform infrastructure → Packer images
+→ Kubernetes platform engineering → MJCart capstone
+```
+
+- Prerequisite: [Git Command Master Map](https://github.com/jeevanm84/git-command-master-map)
+- Next: [Packer AWS Golden Image Pipeline](https://github.com/jeevanm84/packer-aws-golden-image-pipeline)
+- Platform stage: [Kubernetes Zero to Production](https://github.com/jeevanm84/kubernetes-zero-to-production)
+- Capstone: [MJCart E-commerce Microservices](https://github.com/jeevanm84/mjcart-ecommerce-microservices)
+
 ## Contributing and security
 
 Contributions are welcome; read [CONTRIBUTING.md](CONTRIBUTING.md). Report vulnerabilities privately using the process in [SECURITY.md](SECURITY.md). Never post credentials, Terraform state, plan files, or real AWS account details.
